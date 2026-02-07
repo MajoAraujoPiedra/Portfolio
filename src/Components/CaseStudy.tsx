@@ -1,7 +1,6 @@
 function CaseStudy() {
   return (
-    <div>
-    </div>
+    <section id="CaseStudy"></section>
   )
 }
 export default CaseStudy;

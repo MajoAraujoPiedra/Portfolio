@@ -1,0 +1,29 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50vh;
+    gap: 2%;
+}
+.case {
+    display: block;
+    overflow: hidden;
+    border-radius: 18px;
+    height: 100%;
+    width: 100%;
+}
+.track {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    animation: scroll 12s linear infinite;
+}
+.track img {
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}

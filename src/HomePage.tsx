@@ -1,9 +1,8 @@
-import Hero from "./Components/Hero";
-import Footer from "./Layout/Footer";
-import AboutMe from "./Components/AboutMe";
-import CaseStudy from "./Components/CaseStudy";
+import Hero from "./Components/Hero/Hero";
+import Footer from "./Layout/Footer/Footer";
+import AboutMe from "./Components/AboutMe/AboutMe";
+import CaseStudy from "./Components/CaseStudy/CaseStudy";
 import './App.css'
-
 
 
 function HomePage() {

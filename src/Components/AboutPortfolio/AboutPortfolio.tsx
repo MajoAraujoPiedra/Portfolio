@@ -1,3 +1,5 @@
+import './AboutPortfolio.css'
+
 function AboutPortfolio() {
   return (
     <div>

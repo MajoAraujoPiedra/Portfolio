@@ -1,13 +1,13 @@
-.NavOptions{
-    display: grid;
-    grid-template-columns: 5% 30% 30% 30% 5%;
-    height: 100%;
-}
-a{
-    text-decoration: none;
-    font-size: 30px;
-    color: #00d9ff;
-    font-weight: 100px;
+.NavOptions {
+  display: grid;
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: rgba(20, 20, 25, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 243, 132, 0.25);
 }
 .SobreMi{
     display: grid;
@@ -15,13 +15,13 @@ a{
 }
 .SobreMiimg{
     display: grid;
-    width: 40%;
+    width: 25%;
     justify-self: center;
     margin-top: 3%;
     transition: transform 0.50s ease;
 }
 .SobreMiimg:hover{
-    transform: scale(75%); 
+    transform: scale(90%); 
 }
 .EstudioDeCasos{
     display: grid;
@@ -29,13 +29,13 @@ a{
 }
 .EstudioDeCasosimg{
     display: grid;
-    width: 70%;
+    width: 40%;
     justify-self: center;
     margin-top: 3%;
     transition: transform 0.50s ease;
 }
 .EstudioDeCasosimg:hover{
-    transform: scale(75%);
+    transform: scale(90%);
 }
 .Contacto{
     display: grid;
@@ -43,11 +43,11 @@ a{
 }
 .ContactoImg{
     display: grid;
-    width: 40%;
-    justify-self: end;
+    width: 25%;
+    justify-self: center;
     margin-top: 2%;
     transition: transform 0.35s ease;
 }
 .ContactoImg:hover{
-    transform: rotate(30deg);
+    transform: scale(90%); 
 } 

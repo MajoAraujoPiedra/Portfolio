@@ -7,9 +7,9 @@
 .case {
     display: block;
     overflow: hidden;
-    border-radius: 18px;
+    border-radius: 5px;
     height: 100%;
-    width: 100%;
+    width: 92%;
 }
 .track {
     display: flex;

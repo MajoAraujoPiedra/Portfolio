@@ -4,13 +4,13 @@ function Nav() {
   return (
     <div className="NavOptions">
       <div className='SobreMi'>
-        <a href="#about"><img className='SobreMiimg' src="/Materials/Sobremi.jpeg" alt="" /></a>
+        <a href="#about">ABOUT ME</a>
       </div>
       <div className='EstudioDeCasos'>
-        <a href="#CaseStudy"><img className='EstudioDeCasosimg' src="/Materials/EstudioDeCasos.jpeg" alt="" /></a>
+        <a href="#CaseStudy">CASE STUDY</a>
       </div>
       <div className='Contacto'>
-        <a href="#contact"><img className='ContactoImg' src="/Materials/Contacto.jpeg" alt="" /></a>
+        <a href="#contact">CONTACT</a>
       </div>
     </div>
   )

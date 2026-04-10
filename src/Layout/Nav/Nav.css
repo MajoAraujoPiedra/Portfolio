@@ -1,53 +1,41 @@
+@font-face {
+    font-family: Cossette;
+    src: url(../public/Materials/CossetteTitre-Regular.ttf);
+}
 .NavOptions {
-  display: grid;
-  grid-template-columns: 5% 30% 30% 30% 5%;
-  height: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background: rgba(20, 20, 25, 0.35);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 243, 132, 0.25);
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    height: 100%;
+    min-width: 100vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #b11227c0;
+    font-family: Cossette;
+}
+a{
+    text-decoration: none;
+    color: #F2F2F0;
+    font-size: 150%;
+    font-weight: bold;
 }
 .SobreMi{
     display: grid;
     grid-area: 1/2/2/3;
-}
-.SobreMiimg{
-    display: grid;
-    width: 25%;
-    justify-self: center;
-    margin-top: 3%;
-    transition: transform 0.50s ease;
-}
-.SobreMiimg:hover{
-    transform: scale(90%); 
+    justify-content: center;
+    align-content: center;
 }
 .EstudioDeCasos{
     display: grid;
     grid-area: 1/3/2/4;
-}
-.EstudioDeCasosimg{
-    display: grid;
-    width: 40%;
-    justify-self: center;
-    margin-top: 3%;
-    transition: transform 0.50s ease;
-}
-.EstudioDeCasosimg:hover{
-    transform: scale(90%);
+    justify-content: center;
+    align-content: center;
 }
 .Contacto{
     display: grid;
     grid-area: 1/4/2/5;
+    justify-content: center;
+    align-content: center;
 }
-.ContactoImg{
-    display: grid;
-    width: 25%;
-    justify-self: center;
-    margin-top: 2%;
-    transition: transform 0.35s ease;
+a:hover{
+    transform: scale(105%); 
 }
-.ContactoImg:hover{
-    transform: scale(90%); 
-} 

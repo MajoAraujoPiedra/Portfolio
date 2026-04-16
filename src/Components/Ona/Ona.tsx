@@ -16,7 +16,7 @@ function Ona() {
             <h4 className="OnaSubtitle">Plataforma web para estudio digital multi-servicio</h4>
             <h6 className="OnaInfo">Rol: Desarrolladora Frontend / UX <br />
               Tecnologías: ReadyMag, HTML, CSS, JavaScript, Figma</h6>
-            <img className="OnaImg" src="\Materials\OnaHome.gif" alt="" />
+            <video className="OnaImg" src="\Materials\OnaHome.mp4" autoPlay loop muted />
           </div>
           <div className="FrameTwoOna">
           <div className="dropdown">

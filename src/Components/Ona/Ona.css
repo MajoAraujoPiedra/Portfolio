@@ -2,9 +2,10 @@
   display: grid;
   grid-area: 2/1/3/2;
   grid-template-columns: 40% 60%;
-  border-color: #1D201D;
-  border-width: 2px;
-  height: 96%;
+  height: 100vh;
+  background-color: #D6D4DC;
+  border-radius: 5%;
+  padding: 2%
 }
 .FrameOneOna{
   display: grid;
@@ -25,6 +26,7 @@
   font-size: 20px;
   color: #3B6BEE;
   padding-left: 2%;
+  letter-spacing: 1px;
 }
 .OnaInfo{
   grid-area: 3/1/4/2;
@@ -32,6 +34,7 @@
   font-size: 20px;
   color: #3B6BEE;
   padding-left: 2%;
+  letter-spacing: 1px;
 }
 .OnaImg{
   display: grid;
@@ -42,21 +45,50 @@
 .FrameTwoOna{
   display: grid;
   grid-area: 1/2/2/3;
-  grid-template-rows: 75% 25%;
+  grid-template-rows: 25% 75%;
   height: 100%;
 }
-.OnaBanner{
+.BannerConteiner{
   display: grid;
-  grid-area: 2/1/3/2;
-  width: 73%;
+  grid-area: 1/1/2/2;
+  grid-template-columns: 20% 80%;
+}
+.LinkOna{
+  display: grid;
+  grid-area: 1 / 1 / 2 / 2;
+  align-content: center;
+}
+.OnaLogo{
+  width: 100%;
+}
+.OnaBanner{
+  grid-area: 1/2/2/3;
+  width: 100%;
   justify-self: center;
 }
+.text{
+  font-family: Arimo;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: 10%;
+}
+.Lista{
+  font-family: Arimo;
+  font-size: 15px;
+  letter-spacing: 1px;
+  align-content: center;
+  margin-left: 10%;
+}
+ul li{
+  font-family: Arimo;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
 /*DROPDOWN*/
-.dropdown{
-  grid-area: 1/1/2/2;
+.dropdownOna{
+  grid-area: 2/1/3/2;
   width: 100%;
   height: 60%;
-  padding: 2%;
 }
 .dropdown-item {
   padding: 10px 0;

@@ -18,7 +18,7 @@ function Limpies() {
             <img className="LimpiesImg" src="\Materials\Limpies.png" alt="" />
           </div>
           <div className="FrameTwoLimpies">
-          <div className="dropdown">
+          <div className="dropdownLimpies">
             {/* ITEM 1 */}
             <div className={`dropdown-item ${openIndex === 0 ? "open" : ""}`}>
               <div
@@ -34,15 +34,15 @@ function Limpies() {
               <div
                 className={`dropdown-content ${openIndex === 0 ? "open" : ""}`}>
                 <div className="mainconteiner">
-                  <div className="text">
-                    <p> - Desarrollé la estructura y layout de la home page, participando tanto en la definición de la UI <br />como en su implementación<br />
-                        - Implementé secciones custom utilizando Liquid y JavaScript<br />
-                        - Construí las páginas de categorías/listado de productos<br />
-                        - Personalicé un tema base de Shopify según las necesidades del proyecto<br />
-                        - Participé en reuniones con el cliente, iterando sobre feedback constante<br />
-                        - Realicé carga y organización de productos<br />
-                        - Identifiqué y resolví problemas de performance, mejorando los tiempos de carga</p>
-                  </div>
+                    <ul className="Lista">
+                      <li>Desarrollé la estructura y layout de la home page, participando tanto en <br /> la definición de la UI como en su implementación</li>
+                      <li>Implementé secciones custom utilizando Liquid y JavaScript</li>
+                      <li>Construí las páginas de categorías/listado de productos</li>
+                      <li>Personalicé un tema base de Shopify según las necesidades del proyecto</li>
+                      <li>Participé en reuniones con el cliente, iterando sobre feedback constante</li>
+                      <li>Realicé carga y organización de productos</li>
+                      <li>Identifiqué y resolví problemas de performance, mejorando los tiempos de carga</li>
+                    </ul>
                 </div>
               </div>
             </div>
@@ -62,12 +62,14 @@ function Limpies() {
                 className={`dropdown-content ${openIndex === 1 ? "open" : ""}`}>
                 <div className="mainconteiner">
                   <div className="text">
-                    <p>El proyecto comenzó sin una visión completamente definida por parte del cliente, <br />lo que implicó trabajar de manera iterativa y adaptativa durante todo el proceso.<br />
-                      Esto implicó:<br />
-                      - Diseñar y desarrollar en paralelo<br />
-                      - Adaptarse a cambios constantes<br />
-                      - Tomar decisiones técnicas con requerimientos poco definidos</p>
+                    El proyecto comenzó sin una visión completamente definida por parte del cliente, <br />lo que implicó trabajar de manera iterativa y adaptativa durante todo el proceso.<br />
+                    Esto implicó:
                   </div>
+                  <ul className="Lista">
+                    <li>Diseñar y desarrollar en paralelo</li>
+                    <li>Adaptarse a cambios constantes</li>
+                    <li>Tomar decisiones técnicas con requerimientos poco definidos</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -87,11 +89,13 @@ function Limpies() {
                 className={`dropdown-content ${openIndex === 2 ? "open" : ""}`}>
                 <div className="mainconteiner">
                   <div className="text">
-                    <p>Luego de aproximadamente 3 meses de trabajo, se logró llevar el proyecto a producción. <br />
-                      - Se entregó una tienda funcional basada en Shopify<br />
-                      - Se transformó una idea inicial poco definida en un producto concreto<br />
-                      - Se logró equilibrar decisiones técnicas con cambios constantes de diseño</p>
+                  Luego de aproximadamente 3 meses de trabajo, se logró llevar el proyecto a producción.
                   </div>
+                  <ul className="Lista">
+                    <li>Se entregó una tienda funcional basada en Shopify</li>
+                    <li>Se transformó una idea inicial poco definida en un producto concreto</li>
+                    <li>Se logró equilibrar decisiones técnicas con cambios constantes de diseño</li>
+                  </ul>
                 </div>
               </div>
             </div>

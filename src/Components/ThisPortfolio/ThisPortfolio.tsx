@@ -9,7 +9,6 @@ function ThisPortfolio() {
   };
 
   return (
-    <div className="CaseStudy">
       <div className="PortfolioMain">
           <div className="FrameOnePortfolio">
             <img className="PortfolioIMG" src="\Materials\AboutThisPortfolio.jpeg" alt="" />
@@ -19,7 +18,7 @@ function ThisPortfolio() {
             <img className="PortfolioImg" src="\Materials\PortfolioImg.png" alt="" />
           </div>
           <div className="FrameTwoPortfolio">
-          <div className="dropdown">
+          <div className="dropdownPortfolio">
             {/* ITEM 1 */}
             <div className={`dropdown-item ${openIndex === 0 ? "open" : ""}`}>
               <div
@@ -35,14 +34,14 @@ function ThisPortfolio() {
               <div
                 className={`dropdown-content ${openIndex === 0 ? "open" : ""}`}>
                 <div className="mainconteiner">
-                  <div className="text">
-                    <p> - Diseñé la experiencia completa del portfolio (UX/UI) desde cero <br />
-                        - Desarrollé el sitio utilizando Vite y TypeScript <br />
-                        - Estructuré los proyectos como casos de estudio, priorizando claridad y narrativa <br />
-                        - Iteré el diseño a lo largo del proceso utilizando Figma <br />
-                        - Implementé estilos y layout completamente custom <br />
-                        - Gestioné el versionado y deploy utilizando GitHub</p>
-                  </div>
+                  <ul className="Lista">
+                    <li>Diseñé la experiencia completa del portfolio (UX/UI) desde cero</li>
+                    <li>Desarrollé el sitio utilizando Vite y TypeScript</li>
+                    <li>Estructuré los proyectos como casos de estudio, priorizando claridad y narrativa</li>
+                    <li>Iteré el diseño a lo largo del proceso utilizando Figma</li>
+                    <li>Implementé estilos y layout completamente custom</li>
+                    <li>Gestioné el versionado y deploy utilizando GitHub</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -62,11 +61,13 @@ function ThisPortfolio() {
                 className={`dropdown-content ${openIndex === 1 ? "open" : ""}`}>
                 <div className="mainconteiner">
                   <div className="text">
-                    <p>El desafío principal fue construir una plataforma que no solo muestre proyectos, <br /> sino que también comunique cómo trabajo y cómo pienso cada solución.
-                      Esto implicó: <br />
-                      - Diseñar una identidad visual propia <br />
-                      - Definir la estructura narrativa de los proyectos <br />
-                      - Balancear estética con claridad de contenido</p>
+                    El desafío principal fue construir una plataforma que no solo muestre proyectos, <br /> sino que también comunique cómo trabajo y cómo pienso cada solución.
+                    Esto implicó:
+                    <ul className="Lista">
+                      <li>Diseñar una identidad visual propia</li>
+                      <li>Definir la estructura narrativa de los proyectos</li>
+                      <li>Balancear estética con claridad de contenido</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -87,21 +88,22 @@ function ThisPortfolio() {
                 className={`dropdown-content ${openIndex === 2 ? "open" : ""}`}>
                 <div className="mainconteiner">
                   <div className="text">
-                    <p>Luego de aproximadamente 1 mes de trabajo, logré construir un portfolio funcional que refleja tanto <br /> mis habilidades técnicas como mi forma de abordar problemas.
-                      - Plataforma clara y navegable
-                      - Presentación estructurada de proyectos
-                      - Identidad visual propia</p>
+                    Luego de aproximadamente 1 mes de trabajo, logré construir un portfolio funcional que refleja tanto <br /> mis habilidades técnicas como mi forma de abordar problemas.
+                    <ul className="Lista">
+                      <li>Plataforma clara y navegable</li>
+                      <li>Presentación estructurada de proyectos</li>
+                      <li>Identidad visual propia</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <a href="https://github.com/MajoAraujoPiedra/Portfolio">
+          <a className="Git" href="https://github.com/MajoAraujoPiedra/Portfolio">
             <img className="GitRepository" src="\Materials\GitRepository.png" alt="" />
           </a>
         </div>
       </div>
-    </div>
   );
 }
 

@@ -9,7 +9,6 @@ function Support() {
   };
 
   return (
-    <div className="CaseStudy">
       <div className="SupportMain">
         <div className="FrameOneSupport">
             <h1 className="SupportTtitle">Support Engineer</h1>
@@ -17,19 +16,21 @@ function Support() {
             <h6 className="SupportInfo">Rol: Support Engineer <br />
               Tecnologías: Microsoft Power Apps, JavaScript, SQL, herramientas internas de monitoreo y logging</h6>
             <div className="MyRole">
-              <h3>Que Hice</h3>
-              <p>- Realicé troubleshooting en vivo en entornos productivos <br />
-                - Analicé logs y código (JavaScript) para detectar errores<br />
-                - Utilicé SQL para investigar datos y comportamientos del sistema<br />
-                - Trabajé con integraciones complejas y entornos on-premise<br />
-                - Monitoreé y optimicé performance en situaciones críticas<br />
-                - Gestioné múltiples incidencias simultáneamente priorizando impacto</p>
+              <div className="EngineerRole">Que Hice</div>
+              <ul className="EngineerList">
+                <li>Realicé troubleshooting en vivo en entornos productivos</li>
+                <li>Analicé logs y código (JavaScript) para detectar errores</li>
+                <li>Utilicé SQL para investigar datos y comportamientos del sistema</li>
+                <li>Trabajé con integraciones complejas y entornos on-premise</li>
+                <li>Monitoreé y optimicé performance en situaciones críticas</li>
+                <li>Gestioné múltiples incidencias simultáneamente priorizando impacto</li>
+              </ul>
             </div>
           </div>
           <div className="FrameTwoPortfolio">
           <div className="PortfolioStudy">
-            <h3>Caso de estudio</h3>
-            <p> Durante una guardia on-call, una empresa enterprise perdió el  <br />acceso a su entorno de producción un domingo, afectando operaciones críticas.</p>
+            <div className="SupportCaseStudy">Caso de estudio</div>
+            <p className="SupportP"> Durante una guardia on-call, una empresa enterprise perdió el  <br />acceso a su entorno de producción un domingo, afectando operaciones críticas.</p>
           </div>
           <div className="dropdownSupport">
             {/* ITEM 1 */}
@@ -48,7 +49,7 @@ function Support() {
                 className={`dropdown-content ${openIndex === 0 ? "open" : ""}`}>
                 <div className="mainconteiner">
                   <div className="text">
-                    <p>  El sistema presentaba problemas severos de performance (throttling), <br /> generados por una gran cantidad de requests mal estructuradas que saturaban el servidor.</p>
+                    <p> El sistema presentaba problemas severos de performance (throttling), <br /> provocados por una gran cantidad de requests mal estructuradas que se <br />acumulaban en cola y saturaban los servidores. Esto impedía procesar nuevas<br /> operaciones con normalidad y afectaba directamente el entorno de producción.</p>
                   </div>
                 </div>
               </div>
@@ -69,8 +70,8 @@ function Support() {
                 className={`dropdown-content ${openIndex === 1 ? "open" : ""}`}>
                 <div className="mainconteiner">
                   <div className="text">
-                    <p> Realicé el scoping en vivo junto al cliente mientras analizaba el sistema, <br /> utilizando consultas SQL y herramientas internas para identificar la causa raíz. <br />
-                        Detecté una acumulación masiva de requests en cola que estaban degradando <br /> completamente la performance.</p>
+                    <p> Realicé el scoping en vivo junto al cliente mientras el incidente seguía<br />  impactando producción, recopilando información sobre el comportamiento<br />  del sistema y validando síntomas en tiempo real.<br /> 
+                      En paralelo, utilicé consultas SQL y herramientas internas de monitoreo<br />  para analizar métricas, volúmenes de tráfico y estado de los procesos.<br />  A partir de ese análisis, identifiqué una acumulación <br /> masiva de requests en  cola que estaba consumiendo recursos críticos<br />  y degradando completamente la performance del entorno.</p>
                   </div>
                 </div>
               </div>
@@ -91,7 +92,8 @@ function Support() {
                 className={`dropdown-content ${openIndex === 2 ? "open" : ""}`}>
                 <div className="mainconteiner">
                   <div className="text">
-                    <p>Dado que no era viable detener las requests en ese momento, <br /> tomé la decisión de escalar temporalmente la infraestructura, <br /> aumentando la cantidad de servidores disponibles para absorber <br /> la carga y permitir la continuidad del servicio.</p>
+                    <p>Dado que no era viable detener el volumen de requests en ese momento sin comprometer<br /> aún más la operación, tomé la decisión de escalar temporalmente la infraestructura,<br /> aumentando la capacidad disponible para absorber la carga.<br />
+                      Esto permitió restablecer la estabilidad del entorno productivo y mantener<br /> la continuidad del servicio mientras se trabajaba en una solución definitiva.</p>
                   </div>
                 </div>
               </div>
@@ -99,7 +101,6 @@ function Support() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

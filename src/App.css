@@ -23,31 +23,37 @@ html, body {
 }
 .Hero{
     display: grid;
-    min-height: 100vh;
+    min-height: 90vh;
     position: relative;
     z-index: 1;
 }
 .AboutMe{
     display: grid;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .Limpies{
     display: grid;
     min-height: 100vh;
+    padding: 4rem 0;
 }
 .Ona{
     display: grid;
     min-height: 100vh;
+    padding: 4rem 0;
 }
 .ThisPortfolio{
     display: grid;
     min-height: 100vh;
+    padding: 4rem 0;
 }
 .Support{
     display: grid;
     min-height: 100vh;
+    padding: 4rem 0;
 }
 .Footer{
     display: grid;
-    height: 40vh;
+    align-content: end;
+    min-height: 50vh;
+    padding: 2rem 0;
 }

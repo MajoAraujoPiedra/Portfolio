@@ -1,123 +1,249 @@
-
-h5{
-    font-family: Horizon;
-}
-h2{
-    font-family: Horizon;
-    font-size: 400%;
-    color: #2F6BFF;
-    margin-left: 5%;
-}
-.about-wrapper {
-  width: 100vw;
+.MainConteinerMe {
+  display: grid;
+  height: 80vh;
   position: relative;
 }
-.about-banner {
+.MainAboutMe{
   display: grid;
-  height: 60%;
-  grid-template-columns: 35% 65%;
+  height: 100%;
   grid-template-rows: 30% 50% 20%;
-  grid-template-areas:
-    "title subtitle"
-    "title text"
-    "title button";
+  grid-template-columns: 35% 65%;
   border-radius: 22px;
   background: #D8DAE0;
   cursor: pointer;
   transition: transform .25s ease, box-shadow .25s ease;
 }
-.about-banner:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 25px 60px #B11226;
+.MainAboutMe:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 25px 60px #B11226;
 }
-.about-banner h2 {
-    display: grid;
-    grid-area: title;
-    font-size: 5rem;
-    line-height: .9;
-    align-content: center;
-    justify-content: center;
-}
-
-.about-banner h5 {
-  align-content: center;
+.TitleMe {
   display: grid;
-  grid-area: subtitle;
-  font-size: 1.8rem;
+  grid-area: 1/1/4/2;
+  font-family: Horizon;
+  font-size: 80px;
+  align-content: center;
+  justify-content: center;
+  color: #2F6BFF;
+  margin-left: 5%;
 }
-
-.about-banner p {
-  grid-area: text;
+.SubtitleMe{
+  display: grid;
+  align-content: center;
+  font-family: Horizon;
+  grid-area: 1/2/2/3;
+  font-family: Horizon;
+  font-size: 40px;
+}
+.AboutMeP{
+  grid-area: 2/2/3/3;
   font-family: Arimo;
-  font-size: 110%;
+  font-size: 18px;
 }
-
-.about-cta {
-    margin-right: 5%;
-    font-weight: bold;
-    background: #D8DAE0;
-    color: #2F6BFF;
-    font-family: Cossette;
-    font-size: 20px;
-    border: none;
-    grid-area: button;
-    justify-self: end;
-}
-.about-panel {
-  position: absolute;
-  top: 0;
-  left: 0;
-
+.ConteinerButtonOpen{
+  display: grid;
+  grid-area: 3/2/4/3;
+  grid-template-columns: 80% 20%;
   width: 100%;
-  height: 100%;
-  padding: 60px;
-
-  border-radius: 22px;
+}
+.ButtonMain {
+  grid-area: 1/2/2/3;
+  font-weight: bold;
   background: #D8DAE0;
-  background-image: url(/Materials/BlueBackground.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  color: #2F6BFF;
+  font-family: Cossette;
+  font-size: 20px;
+  border: none;
+}
+.PopUpMain{
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background: #D8DAE0;
   backdrop-filter: blur(12px);
-
   opacity: 0;
   transform: scale(0.95);
   pointer-events: none;
-
   transition:
     opacity .35s ease,
     transform .35s cubic-bezier(.22,1,.36,1);
-
   box-shadow: 0 35px 90px #B11226;
 }
-.about-panel.open {
+.PopUpMain.open {
   display: grid;
-  height: 60%;
-  grid-template-columns: 35% 65%;
-  grid-template-rows: 30% 50% 20%;
-  grid-template-areas: 
-    "title subtitle"
-    "title text"
-    "education button";
-  border-radius: 22px;
-  background: #D8DAE0;
+  height: 80vh;
   opacity: 1;
   transform: scale(1);
   pointer-events: auto;
 }
-.about-panel-close {
-    margin-right: 5%;
-    font-weight: bold;
-    background: #D6D4DC;
-    color: #2F6BFF;
-    font-family: Cossette;
-    font-size: 20px;
-    border: none;
-    grid-area: button;
-    justify-self: end;
+.OpenMainContainer{
+  display: grid;
+  height: 80vh;
+  width: 100%;
+  grid-template-rows: 20% 65% 15%;
+  grid-template-columns: 35% 35% 30%;
+  background-color: #f2f2f0;
 }
-.education-overlay{
+.PopUpDescription{
+  display: grid;
+  grid-area: 1/1/2/4;
+  font-family: Cossette;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1%;
+}
+.PopUpSupport{
+  display: grid;
+  grid-area: 2/1/3/2;
+  height: 100%;
+  grid-template-rows: 6% 8% 6% 80%;
+}
+.SupportDate{
+  display: grid;
+  grid-area: 1/1/2/2;
+  font-family: Horizon;
+  font-size: 20px;
+  color: #26262A;
+  justify-content: center;
+}
+.SupportName{
+  display: grid;
+  grid-area: 2/1/3/2;
+  font-family: Horizon;
+  font-size: 28px;
+  color: #26262A;
+  justify-content: center;
+}
+.SupportDetails{
+  display: grid;
+  grid-area: 3/1/4/2;
+  font-family: Cossette;
+  font-size: 20px;
+  color: #26262A;
+  justify-content: center;
+}
+.SupportList{
+  display: grid;
+  grid-area: 4/1/5/2;
+  align-content: center;
+  margin-left: 14%;
+}
+ul li{
+  font-family: Arimo;
+  font-size: 15px;
+  color: #26262A;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.PopUpOna{
+  display: grid;
+  grid-area: 2/2/3/3;
+  height: 100%;
+  grid-template-rows: 6% 8% 6% 80%;
+}
+.OnaDate{
+  display: grid;
+  grid-area: 1/1/2/2;
+  font-family: Horizon;
+  font-size: 20px;
+  color: #26262A;
+  justify-content: center;
+}
+.OnaName{
+  display: grid;
+  grid-area: 2/1/3/2;
+  font-family: Horizon;
+  font-size: 28px;
+  color: #26262A;
+  justify-content: center;
+  text-align: center;
+}
+.OnaDetails{
+  display: grid;
+  grid-area: 3/1/4/2;
+  font-family: Cossette;
+  font-size: 20px;
+  color: #26262A;
+  justify-content: center;
+}
+.OnaList{
+  display: grid;
+  grid-area: 4/1/5/2;
+  align-content: center;
+  margin-left: 12%;
+}
+.PopUpPuma{
+  display: grid;
+  grid-area: 2/3/3/4;
+  height: 100%;
+  grid-template-rows: 6% 8% 6% 80%;
+}
+.PumaDate{
+  display: grid;
+  grid-area: 1/1/2/2;
+  font-family: Horizon;
+  font-size: 20px;
+  color: #26262A;
+  justify-content: center;
+}
+.PumaName{
+  display: grid;
+  grid-area: 2/1/3/2;
+  font-family: Horizon;
+  font-size: 28px;
+  color: #26262A;
+  justify-content: center;
+}
+.PumaDetails{
+  display: grid;
+  grid-area: 3/1/4/2;
+  font-family: Cossette;
+  font-size: 20px;
+  color: #26262A;
+  justify-content: center;
+}
+.PumaList{
+  display: grid;
+  grid-area: 4/1/5/2;
+  align-content: center;
+  margin-left: 12%;
+  margin-bottom: 18%;
+}
+.PopUpButtonConteiner{
+  display: grid;
+  grid-area: 3/3/4/4;
+  border: none;
+  height: 60%;
+  width: 60%;
+  justify-self: center;
+  margin-left: 50%;
+}
+.PopUpButtonClose{
+  font-weight: bold;
+  background: #f2f2f0;
+  color: #2F6BFF;
+  font-family: Cossette;
+  font-size: 22px;
+  border: none;
+}
+
+
+
+
+/*
+.PopUpMain-close {
+  margin-right: 5%;
+  font-weight: bold;
+  background: #D6D4DC;
+  color: #2F6BFF;
+  font-family: Cossette;
+  font-size: 20px;
+  border: none;
+  grid-area: button;
+  justify-self: end;
+}
+.PopUpButtonClose{
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,.6);

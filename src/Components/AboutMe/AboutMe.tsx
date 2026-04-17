@@ -4,7 +4,6 @@ import "./AboutMe.css"
 
 function AboutMe() {
   const [open, setOpen] = useState(false)
-  const [educationOpen, setEducationOpen] = useState(false)
 
   return (
     <div className="MainConteinerMe">

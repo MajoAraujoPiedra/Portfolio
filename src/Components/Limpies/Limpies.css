@@ -40,7 +40,7 @@
 .LimpiesImg{
   display: grid;
   grid-area: 4/1/5/2;
-  width: 100%;
+  width: 50%;
   justify-self: center;
   padding-top: 6%;
 }
